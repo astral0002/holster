@@ -4,6 +4,7 @@
 
 head,body{
     background-color: #E3FDFD;
+    overflow: hidden;
 }
 
 .main{
