@@ -7,9 +7,9 @@ function copyText(){
 window.onload = function greet(){
     const element = document.getElementById("welcome")
     const titles = [
-        "Hey!",
-        "Hi!",
-        "Hello!"
+        "👋 Hey!",
+        "👋 Hi!",
+        "👋 Hello!"
     ]
     title = titles[Math.floor(Math.random()*titles.length)];
     element.innerHTML = title
