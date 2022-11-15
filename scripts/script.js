@@ -3,3 +3,27 @@ function copyText(){
     navigator.clipboard.writeText(text);
     alert("You have copied the settings.")
 }
+
+// function greet(){
+//     const titles = [
+//         "👋 Hi!",
+//         "👋 Hello!",
+//         "👋 Welcome!"
+//     ]
+//     var rand = titles[ Math.random()*titles.length]
+//     const element = document.getElementsByClassName(".welcome")
+//     element.innerHTML = "${rand}"
+// }
+
+
+window.onload = function greet(){
+    const element = document.getElementById("welcome")
+    const titles = [
+        "👋 Hey!",
+        "👋 Hi!",
+        "👋 Hello!",
+        "👋 Welcome!"
+    ]
+    title = titles[Math.floor(Math.random()*titles.length)];
+    element.innerHTML = title
+}
