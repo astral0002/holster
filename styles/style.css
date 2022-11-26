@@ -32,9 +32,13 @@ p{
 }
 
 #welcome{
+    opacity: 0;
     font-size: 46px;
     animation: appear 2.5s;
-    animation-delay: 2;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    display:flex;
+    justify-content: center;
 }
 
 .intro{
@@ -54,8 +58,8 @@ p{
 #data{
     font-size: 24px;
     padding: 12px;
-    font-size:large;
-    margin:0, auto;
+    font-size: large;
+    margin: 0, auto;
     border: 3px, solid;
     border-style: solid;
     border-color: #0D7377;
@@ -64,7 +68,7 @@ p{
     border-spacing: 30px;
     text-align: center;
     width: 800px;
-    display:flex;
+    display:grid;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -76,17 +80,24 @@ p{
 }
 
 button{
-    transition: transform 0.1s;
+    transition: transform 0.2s;
     background-color:#313131;
     border-color: #064c4e;
     border-style:solid;
     border-radius: 3px;
     color:white;
+    padding: 3px;
 }
 
 button:hover{
     transform: scale(1.1);
     border-color: #0D7377;
+}
+
+.welcome{
+    display: grid;
+    align-self: center;
+    justify-content: center;
 }
 
 /* table appearing animation */
@@ -98,6 +109,7 @@ button:hover{
         opacity: 1;
     }
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
