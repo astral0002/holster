@@ -6,15 +6,13 @@ function copyText(){
 }
 
 window.onload = function greet(){
-    const element = document.getElementById("welcome");
+    const element = document.getElementById("welcome")
     const titles = [
         "👋 Hey!",
         "👋 Hi!",
         "👋 Hello!",
         "👋 Welcome!"
     ];
-    title = titles[Math.floor(Math.random()*titles.length)];
+    var title = titles[Math.floor(Math.random()*titles.length)];
     element.innerHTML = title;
 }
-
-
